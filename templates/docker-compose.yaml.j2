@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+
+  db:
+    container_name: {{ POSTGRES_CONTAINER_NAME }}
+    image: postgres:{{ POSTGRES_VERSION }}
+    restart: always
+    ports:
+      - {{ POSTGRES_PORT }}:5432
+    volumes:
+      - {{ POSTGRES_VOLUME }}:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: {{ POSTGRES_PASSWORD }}
+
+volumes:
+  {{ POSTGRES_VOLUME }}:

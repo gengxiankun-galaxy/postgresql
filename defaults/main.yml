@@ -1,0 +1,10 @@
+---
+# defaults file for postgres
+
+OPT_PATH: /opt/gengxiankun-galaxy
+
+POSTGRES_CONTAINER_NAME: 'postgres'
+POSTGRES_PORT: 5432
+POSTGRES_PASSWORD: 123456
+POSTGRES_VOLUME: 'postgres'
+POSTGRES_VERSION: 14.23
