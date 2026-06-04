@@ -6,7 +6,7 @@ PostgreSQL
 Installation
 ------------
 
-`ansible-galaxy install gengxiankun.postgresql`
+`ansible-galaxy install gengxiankun-galaxy.postgresql`
 
 Dependencies
 ------------
@@ -30,7 +30,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - gengxiankun.postgresql
+         - gengxiankun-galaxy.postgresql
 
 License
 -------
